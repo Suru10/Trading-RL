@@ -100,7 +100,7 @@ class TradingEnv(gym.Env):
         else:
             # Check if the stock market data is already present in the database
             csvConverter = CSVHandler()
-            csvName = "".join(['Data/', marketSymbol, '_', startingDate, '_', endingDate])
+            csvName = "".join(['/content/Trading-RL/Data/', marketSymbol, '_', startingDate, '_', endingDate])
             exists = os.path.isfile(csvName + '.csv')
             
             # If affirmative, load the stock market data from the database

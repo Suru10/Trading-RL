@@ -14,7 +14,7 @@ tqdm
 tabulate
 
 # Deep Learning framework
-pytorch
+torch
 tensorboard
 
 # OpenAI Gym RL framework
