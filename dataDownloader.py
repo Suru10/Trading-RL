@@ -50,7 +50,7 @@ class AlphaVantage:
         """
         
         self.link = 'https://www.alphavantage.co/query'
-        self.apikey = 'L1HV5FMPJ18J6U8P'
+        self.apikey = ''
         self.datatype = 'csv'
         self.outputsize = 'full'
         self.data = pd.DataFrame()
