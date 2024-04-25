@@ -438,7 +438,7 @@ class TradingSimulator:
 
         # If required, save the trading strategy with Pickle
         if(saveStrategy):
-            fileName = "".join(["Strategies/", strategy, "_", stock, "_", startingDate, "_", splitingDate])
+            fileName = "".join(["/content/Trading-RL/Strategies/", strategy, "_", stock, "_", startingDate, "_", splitingDate])
             if ai:
                 tradingStrategy.saveModel(fileName)
             else:
@@ -521,7 +521,7 @@ class TradingSimulator:
         # 2. LOADING PHASE    
 
         # Check that the strategy to load exists in the strategy dataset
-        fileName = "".join(["Strategies/", strategy, "_", stock, "_", startingDate, "_", splitingDate])
+        fileName = "".join(["/content/Trading-RL/Strategies/", strategy, "_", stock, "_", startingDate, "_", splitingDate])
         exists = os.path.isfile(fileName)
         # If affirmative, load the trading strategy
         if exists:
