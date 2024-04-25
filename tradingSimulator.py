@@ -319,7 +319,7 @@ class TradingSimulator:
         # Generation of the two legends and plotting
         ax1.legend(["Price", "Long",  "Short", "Train/Test separation"])
         ax2.legend(["Capital", "Long", "Short", "Train/Test separation"])
-        plt.savefig(''.join(['Figures/', str(trainingEnv.marketSymbol), '_TrainingTestingRendering', '.png'])) 
+        plt.savefig(''.join(['/content/Trading-RL/Figures/', str(trainingEnv.marketSymbol), '_TrainingTestingRendering', '.png'])) 
         #plt.show()
 
 
